@@ -1,0 +1,23 @@
+package hsh;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+
+public class LangRes {
+
+	private static Map<Locale,Map<String,String>> data;
+	
+	static {
+        Map<Locale,Map<String,String>> temp = new HashMap<Locale,Map<String,String>>();
+        aMap.put(1, "one");
+        aMap.put(2, "two");
+        data = Collections.unmodifiableMap(temp);
+    }
+
+	public static String getStr(Locale spr,String key) {
+		Map<String,String> lr = data.get(spr);
+		return lr.get(key);
+	}
+}

@@ -1,0 +1,7 @@
+1419543689310	Rename method 'getScopeNote'
+1419587697813	Rename local variable 'strScopeNote'
+1419608636523	Copy compilation unit
+1419624701760	Convert local variable 'lblStatusbar' to field
+1419627980046	Convert local variable 'sourceViewer' to field
+1419681930539	Rename method 'selectConcept'
+1419780925506	Delete element

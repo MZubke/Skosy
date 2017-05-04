@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+	<moveEntry
+		id="org.eclipse.wb.rcp.layouts swing2swt.layout.BorderLayout"
+		category="org.eclipse.wb.rcp.layouts"
+		nextEntry="org.eclipse.wb.rcp.layouts org.eclipse.swt.custom.StackLayout"/>
+	<moveEntry
+		id="system.layout.absolute"
+		category="org.eclipse.wb.rcp.layouts"
+		nextEntry="org.eclipse.wb.rcp.layouts org.eclipse.swt.layout.FillLayout"/>
+	<moveEntry
+		id="org.eclipse.wb.rcp.composites org.eclipse.swt.widgets.Composite"
+		category="org.eclipse.wb.rcp.composites"
+		nextEntry="org.eclipse.wb.rcp.composites org.eclipse.swt.custom.ScrolledComposite"/>
+	<moveEntry
+		id="org.eclipse.wb.rcp.controls org.eclipse.swt.widgets.Tree"
+		category="org.eclipse.wb.rcp.controls"
+		nextEntry="org.eclipse.wb.rcp.controls org.eclipse.swt.widgets.TreeColumn"/>
+	<moveEntry
+		id="org.eclipse.wb.rcp.layouts org.eclipse.swt.layout.RowLayout"
+		category="org.eclipse.wb.rcp.layouts"
+		nextEntry="org.eclipse.wb.rcp.layouts org.eclipse.swt.layout.FormLayout"/>
+</commands>
