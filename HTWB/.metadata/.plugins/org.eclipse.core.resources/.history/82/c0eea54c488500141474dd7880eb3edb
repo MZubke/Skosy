@@ -1,9 +1,0 @@
-package hsh;
-
-public class SKOSModel {
-
-	public SKOSModel(String path) {
-		// TODO Auto-generated constructor stub
-	}
-
-}

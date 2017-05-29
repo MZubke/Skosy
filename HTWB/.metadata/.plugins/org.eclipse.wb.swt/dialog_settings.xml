@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<section name="org.eclipse.wb.internal.swt.model.property.editor.image.ImagePropertyEditor$ImageDialog">
-		<item value="579" key="height"/>
-		<item value="881" key="width"/>
-		<item value="131" key="y"/>
-		<item value="334" key="x"/>
-	</section>
-</section>

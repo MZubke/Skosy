@@ -1,9 +1,0 @@
-1420534486400	Rename method 'createTries'
-1420534614586	Rename field 'searchtrees'
-1420535679815	Rename local variable 'tries'
-1420535702860	Rename local variable 'ltrie'
-1420554206045	Convert local variable 'comboLangSel' to field
-1420567628216	Rename field 'index'
-1420570630866	Rename local variable 'A'
-1420702314527	Rename type 'ThreeGramIndex'
-1420929818045	Copy files
