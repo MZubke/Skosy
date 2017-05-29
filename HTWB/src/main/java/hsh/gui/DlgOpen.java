@@ -1,12 +1,9 @@
-/**
- * SWT based dialog for loading a SKOS file
- *
- * @author  Christian Wartena
- */
-package hsh;
+
+package hsh.gui;
 
 import java.io.File;
 
+import hsh.HTWB;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.widgets.FileDialog;
@@ -14,9 +11,12 @@ import org.eclipse.swt.widgets.MessageBox;
 
 import static javafx.application.ConditionalFeature.SWT;
 
-
+/**
+ * SWT based dialog for loading SKOS files
+ *
+ * @author  Christian Wartena
+ */
 public class DlgOpen implements SelectionListener {
-
 
 
 

@@ -1,6 +1,10 @@
 package hsh;
 
 import com.hp.hpl.jena.rdf.model.Resource;
+import hsh.gui.DlgAbout;
+import hsh.gui.DlgOpen;
+import hsh.gui.DlgPreferences;
+import hsh.gui.DlgSave;
 import org.eclipse.core.databinding.DataBindingContext;
 import org.eclipse.core.databinding.observable.Realm;
 import org.eclipse.jface.databinding.swt.SWTObservables;
@@ -31,7 +35,7 @@ import java.util.prefs.Preferences;
 public class HTWB {
 	private DataBindingContext m_bindingContext;
 
-	protected Shell shlHTWB;
+	public Shell shlHTWB;
 	private Tree tree;
 	private SKOSModel model = null;
 	private Browser conceptBrowser;

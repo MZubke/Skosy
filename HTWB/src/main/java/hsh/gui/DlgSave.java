@@ -1,10 +1,15 @@
-package hsh;
+package hsh.gui;
 
+import hsh.HTWB;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.widgets.FileDialog;
-
+/**
+ * SWT based dialog for saving SKOS files
+ *
+ * @author  Christian Wartena
+ */
 public class DlgSave implements SelectionListener {
 
 	private HTWB parent;

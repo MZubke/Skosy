@@ -4,7 +4,11 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-
+/**
+ * Multi-language support for this software (Currently supported: English, German, Dutch)
+ *
+ * @author  Christian Wartena
+ */
 public class LangRes {
 
 	private static Map<Locale,Map<String,String>> data;

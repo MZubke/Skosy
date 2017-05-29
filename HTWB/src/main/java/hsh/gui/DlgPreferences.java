@@ -1,9 +1,10 @@
-package hsh;
+package hsh.gui;
 
 import java.util.Locale;
 import java.util.prefs.BackingStoreException;
 import java.util.prefs.Preferences;
 
+import hsh.HTWB;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
@@ -16,7 +17,11 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.TabFolder;
 import org.eclipse.swt.widgets.TabItem;
 import swt.SWTResourceManager;
-
+/**
+ * SWT based dialog to show and edit preferences of this software
+ *
+ * @author  Christian Wartena
+ */
 public class DlgPreferences implements SelectionListener {
 
 	
