@@ -46,7 +46,7 @@ public class DlgPreferences implements SelectionListener {
 	
 	
 	/**
-	 * @wbp.parser.entryPoint
+	 * //wbp.parser.entryPoint
 	 */
 	public void open() {
 		display = Display.getDefault();
