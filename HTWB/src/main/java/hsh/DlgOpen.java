@@ -1,3 +1,8 @@
+/**
+ * SWT based dialog for loading a SKOS file
+ *
+ * @author  Christian Wartena
+ */
 package hsh;
 
 import java.io.File;
