@@ -1,4 +1,4 @@
-package hsh;
+package hsh.skosy;
 
 import java.util.Collections;
 import java.util.HashMap;

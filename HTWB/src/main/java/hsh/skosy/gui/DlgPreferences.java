@@ -1,10 +1,10 @@
-package hsh.gui;
+package hsh.skosy.gui;
 
 import java.util.Locale;
 import java.util.prefs.BackingStoreException;
 import java.util.prefs.Preferences;
 
-import hsh.HTWB;
+import hsh.skosy.HTWB;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;

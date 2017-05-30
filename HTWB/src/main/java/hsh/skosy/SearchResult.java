@@ -1,4 +1,4 @@
-package hsh;
+package hsh.skosy;
 
 public class SearchResult implements Comparable{
 	private ConceptInfo concept;

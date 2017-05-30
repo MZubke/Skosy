@@ -1,4 +1,4 @@
-package hsh;
+package hsh.skosy;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

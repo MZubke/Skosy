@@ -1,4 +1,4 @@
-package hsh;
+package hsh.skosy;
 
 public class ConceptInfo {
 	private String term;

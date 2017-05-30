@@ -1,8 +1,11 @@
-package hsh.gui;
+/**
+ * Presentation Layer: SKOS-Visualization, Interaction
+ */
+package hsh.skosy.gui;
 
 import java.util.Locale;
 
-import hsh.HTWB;
+import hsh.skosy.HTWB;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;

@@ -1,10 +1,10 @@
-package hsh;
+package hsh.skosy;
 
 import com.hp.hpl.jena.rdf.model.Resource;
-import hsh.gui.DlgAbout;
-import hsh.gui.DlgOpen;
-import hsh.gui.DlgPreferences;
-import hsh.gui.DlgSave;
+import hsh.skosy.gui.DlgAbout;
+import hsh.skosy.gui.DlgOpen;
+import hsh.skosy.gui.DlgPreferences;
+import hsh.skosy.gui.DlgSave;
 import org.eclipse.core.databinding.DataBindingContext;
 import org.eclipse.core.databinding.observable.Realm;
 import org.eclipse.jface.databinding.swt.SWTObservables;
