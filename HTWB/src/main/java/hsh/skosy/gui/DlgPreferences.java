@@ -67,7 +67,7 @@ public class DlgPreferences implements SelectionListener {
 
 	private void createContents() {
 		shlPref = new Shell(display, SWT.DIALOG_TRIM | SWT.APPLICATION_MODAL);
-		shlPref.setImage(SWTResourceManager.getImage(DlgPreferences.class, "/de/hsh/icon/SkosyIcon.png"));
+		shlPref.setImage(SWTResourceManager.getImage(DlgPreferences.class, "icon/SkosyIcon.png"));
 		shlPref.setSize(450, 289);
 		
 		TabFolder tabFolder = new TabFolder(shlPref, SWT.NONE);
@@ -87,7 +87,7 @@ public class DlgPreferences implements SelectionListener {
 		combo.setBounds(10, 23, 138, 23);
 		combo.add("Deutsch",0);
 		combo.add("Englisch",1);
-		combo.add("Niederl�ndisch",2);
+		combo.add("Niederländisch",2);
 		
 		int selectedLang = 0;
 		switch(loc.getLanguage()) {

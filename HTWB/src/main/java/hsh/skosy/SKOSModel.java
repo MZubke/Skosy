@@ -21,6 +21,9 @@ import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
+import hsh.skosy.core.ConceptInfo;
+import hsh.skosy.core.Index;
+import hsh.skosy.core.TrigramIndex;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.browser.Browser;
 import org.eclipse.swt.graphics.Image;
@@ -78,7 +81,7 @@ public class SKOSModel {
 	private final static String rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 	private final static String dcterms = "http://purl.org/dc/terms/";
 	private final static String dc = "http://purl.org/dc/elements/1.1/";
-	private final String imagepath;
+	private final String imagepath="C:\\ide\\SkosyGit\\Skosy\\HTWB\\src\\main\\resources\\hsh\\skosy\\gui\\img\\";//ToDo: DIRTY HACK!
 	private Map<String,TreeItem> uri2tree;
 	private Map<Resource,String> concept2notation; //caching
 	private Tree hierarchy;
@@ -115,7 +118,7 @@ public class SKOSModel {
 				throw(new FileNotFoundException(LangRes.getStr(loc, "error.unknownext") + " " + ext));			
 			}
 	
-			InputStream skosstream = getClass().getResourceAsStream("/de/hsh/rdf/skos.rdf");
+			InputStream skosstream = getClass().getResourceAsStream("rdf/skos.rdf");
 			skosdef.read(skosstream, null,"RDF/XML");	
 			ontology.add(skosdef);
 			
@@ -133,7 +136,9 @@ public class SKOSModel {
 		//imagepath = f.getAbsolutePath() + "/de/hsh/icon/";
 		String exepath = f.getAbsolutePath(); //+"/../img/";
 		int lastslash = exepath.lastIndexOf('/') > 0 ? exepath.lastIndexOf('/') : exepath.lastIndexOf('\\');
-		imagepath = exepath.substring(0, lastslash) +"/img/";
+		 //imagepath = exepath.substring(0, lastslash) +"/img/";
+		//imagepath=getClass().getResource("gui/img/");
+		System.out.println(imagepath);
 		//imagepath = getClass().getResource("/de/hsh/icon/" ).toString();
 
 		
@@ -284,9 +289,9 @@ public class SKOSModel {
 		hierarchy = tree;
 		TreeItem root = new TreeItem(tree,SWT.NONE);
 		root.setText(filePath.substring(filePath.lastIndexOf("\\")+1));
-		Image icon_file = SWTResourceManager.getImage(HTWB.class, "/de/hsh/icon/file.png");
-		Image icon_schema = SWTResourceManager.getImage(HTWB.class, "/de/hsh/icon/schema.png");
-		Image icon_concept = SWTResourceManager.getImage(HTWB.class, "/de/hsh/icon/concept.png");
+		Image icon_file = SWTResourceManager.getImage(HTWB.class, "gui/icon/file.png");
+		Image icon_schema = SWTResourceManager.getImage(HTWB.class, "gui/icon/schema.png");
+		Image icon_concept = SWTResourceManager.getImage(HTWB.class, "gui/icon/concept.png");
 
 		root.setImage(icon_file);
 	
@@ -317,9 +322,9 @@ public class SKOSModel {
 	}
 
 	private void DisplaySchema(Resource parentschema, TreeItem root) {
-		Image icon_schema = SWTResourceManager.getImage(HTWB.class, "/de/hsh/icon/schema.png");
-		Image icon_concept = SWTResourceManager.getImage(HTWB.class, "/de/hsh/icon/concept.png");
-		Image icon_conceptd = SWTResourceManager.getImage(HTWB.class, "/de/hsh/icon/concept_d.png");
+		Image icon_schema = SWTResourceManager.getImage(HTWB.class, "gui/icon/schema.png");
+		Image icon_concept = SWTResourceManager.getImage(HTWB.class, "gui/icon/concept.png");
+		Image icon_conceptd = SWTResourceManager.getImage(HTWB.class, "gui/icon/concept_d.png");
 		ArrayList<Resource> schemata = getTopSchemata(parentschema);
 		for(Resource schema:schemata) {
 			if(schema.equals(parentschema)) continue;
@@ -348,8 +353,8 @@ public class SKOSModel {
 	}
 
 	private void DisplayConcept(Resource parentconcept, TreeItem root) {
-		Image icon_concept = SWTResourceManager.getImage(HTWB.class, "/de/hsh/icon/concept.png");
-		Image icon_conceptd = SWTResourceManager.getImage(HTWB.class, "/de/hsh/icon/concept_d.png");
+		Image icon_concept = SWTResourceManager.getImage(HTWB.class, "gui/icon/concept.png");
+		Image icon_conceptd = SWTResourceManager.getImage(HTWB.class, "gui/icon/concept_d.png");
 		ArrayList<Resource> concepts = getNarrowerConcepts(parentconcept);
 		for(Resource concept:concepts) {
 			TreeItem t_concept = new TreeItem(root,SWT.NONE);

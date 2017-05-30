@@ -19,7 +19,7 @@ public class LangRes {
         Map<String,String> de = new HashMap<String,String>();
         de.put("main.title", "Skosy (Developer Preview)");
         de.put("main.file", "Datei");
-        de.put("main.open", "�ffnen");
+        de.put("main.open", "Öffnen");
         de.put("main.save", "Speichern");
         de.put("main.close", "Beenden");
         de.put("main.prefs", "Einstellungen");
@@ -36,7 +36,7 @@ public class LangRes {
         de.put("status.reading", "Lese");
         de.put("status.buildtree", "Erstelle Hierarchie ...");
         de.put("status.buildindex", "Erstelle Suchindex ...");
-        de.put("status.addstatements", "Erg�nze fehlende Aussagen  ...");
+        de.put("status.addstatements", "Ergänze fehlende Aussagen  ...");
         de.put("search.any", "alle");
         de.put("error.unknownext", "Unbekannte Extension");
         temp.put(new Locale("de"), de);
@@ -73,7 +73,7 @@ public class LangRes {
         nl.put("main.prefs", "Opties");
         nl.put("main.help", "Help");
         nl.put("main.about", "Over de HTWB");
-        nl.put("main.hierar", "Hi�rarchie");
+        nl.put("main.hierar", "Hierarchie");
         nl.put("main.search", "Zoeken");
         nl.put("main.concept", "Concept view");
         nl.put("main.source", "Source view");

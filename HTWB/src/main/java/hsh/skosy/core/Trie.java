@@ -1,11 +1,11 @@
-package hsh.skosy;
+package hsh.skosy.core;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Map.Entry;
 
 
-public class Trie implements Index{
+public class Trie implements Index {
 	
 	
 	

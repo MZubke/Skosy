@@ -1,4 +1,4 @@
-package hsh.skosy;
+package hsh.skosy.core;
 
 import java.util.ArrayList;
 

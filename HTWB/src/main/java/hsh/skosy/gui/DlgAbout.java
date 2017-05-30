@@ -66,7 +66,7 @@ public class DlgAbout implements SelectionListener {
 
 	private void createContents() {
 		shlAbout = new Shell(display, SWT.DIALOG_TRIM | SWT.APPLICATION_MODAL);
-		shlAbout.setImage(SWTResourceManager.getImage(DlgAbout.class, "/de/hsh/icon/SkosyIcon.png"));
+		shlAbout.setImage(SWTResourceManager.getImage(DlgAbout.class, "icon/SkosyIcon.png"));
 		shlAbout.setSize(450, 217);
 		
 		Canvas canvas = new Canvas(shlAbout, SWT.NONE);
@@ -93,7 +93,7 @@ public class DlgAbout implements SelectionListener {
 	}
 
 	private void drawLogoToCanvas(Canvas canvas) {
-		Image logo = SWTResourceManager.getImage(HTWB.class, "/de/hsh/icon/SkosyLogoSmall.jpg");
+		Image logo = SWTResourceManager.getImage(HTWB.class, "gui/icon/SkosyLogoSmall.jpg");
 		ImageData imgData = logo.getImageData();
 		
 

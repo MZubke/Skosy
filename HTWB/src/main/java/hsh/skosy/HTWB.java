@@ -1,6 +1,9 @@
 package hsh.skosy;
 
 import com.hp.hpl.jena.rdf.model.Resource;
+import hsh.skosy.core.ConceptInfo;
+import hsh.skosy.core.Index;
+import hsh.skosy.core.SearchResult;
 import hsh.skosy.gui.DlgAbout;
 import hsh.skosy.gui.DlgOpen;
 import hsh.skosy.gui.DlgPreferences;
@@ -105,9 +108,18 @@ public class HTWB {
 	 * Create contents of the window.
 	 */
 	protected void createContents() {
-		
+		System.out.println("run");
 		shlHTWB = new Shell();
-		shlHTWB.setImage(SWTResourceManager.getImage(HTWB.class, "/de/hsh/icon/SkosyIcon.png"));
+        //final Display display = new Display();
+
+        //ClassLoader classLoader = getClass().getClassLoader();
+        //File file = new File(classLoader.getResource("icons/de/hsh/skosy/SkosyIcon.png").getFile());
+        //Image small = new Image(display,file.getAbsolutePath());
+        //System.out.println(file.getAbsolutePath());
+
+
+		shlHTWB.setImage(SWTResourceManager.getImage(HTWB.class, "gui/icon/SkosyIcon.png"));
+       // shlHTWB.setImage()
 		shlHTWB.setSize(850, 600);
 		if(!LangRes.supports(loc)) {
 			loc = new Locale("en");
@@ -345,7 +357,8 @@ public class HTWB {
 								} else if("altLabel".equals(label)) {
 									it.setFont(fontitalic);
 								}
-								it.setImage(0, SWTResourceManager.getImage(HTWB.class,"/de/hsh/icon/"+ resloc.getLanguage() +".png"));
+								System.out.println("gui/icon/"+ resloc.getLanguage() +".png");
+								it.setImage(0, SWTResourceManager.getImage(HTWB.class,"gui/icon/"+ resloc.getLanguage() +".png"));
 							}
 						}
 					}
